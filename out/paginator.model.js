@@ -9,6 +9,14 @@ var Paginator = /** @class */ (function () {
     return Paginator;
 }());
 exports.Paginator = Paginator;
+var Filter = /** @class */ (function () {
+    function Filter(key, value) {
+        this.key = key;
+        this.value = value;
+    }
+    return Filter;
+}());
+exports.Filter = Filter;
 var Sort = /** @class */ (function () {
     function Sort(orders) {
         this.orders = orders;

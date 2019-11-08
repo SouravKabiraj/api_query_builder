@@ -10,9 +10,14 @@ export class Paginator {
     }
 }
 
-export interface Filter {
+export class Filter {
     key: string;
     value: any;
+
+    constructor(key: string, value: any) {
+        this.key = key;
+        this.value = value;
+    }
 }
 
 export class Sort {
